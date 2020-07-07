@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <div class="input" id="input"></div>
+                <div class="result" id="result"></div>
+            </div>
+            <div class="row first">
+                <button class="button" id="clearBtn" data-clear="C">C</button>
+                <button class="button" id="deleteBtn" data-delete="del">&#8592;</button>
+                <button class="operator-button button" data-operator="/">&#247;</button>
+            </div>
+            <div class="row">
+                <button class="number-button button" data-number="7">7</button>
+                <button class="number-button button" data-number="8">8</button>
+                <button class="number-button button" data-number="9">9</button>
+                <button class="operator-button button" data-operator="-">-</button>
+            </div>
+            <div class="row">
+                <button class="number-button button" data-number="4">4</button>
+                <button class="number-button button" data-number="5">5</button>
+                <button class="number-button button" data-number="6">6</button>
+                <button class="operator-button button" data-operator="+">+</button>
+            </div>
+            <div class="row">
+                <button class="number-button button" data-number="1">1</button>
+                <button class="number-button button" data-number="2">2</button>
+                <button class="number-button button" data-number="3">3</button>
+                <button class="operator-button button" data-operator="*">*</button>
+            </div>
+            <div class="row">
+                <button class="button" id="floatBtn" data-float=".">&#8729;</button>
+                <button class="number-button button" data-number="0">0</button>
+                <button class="button" id="equalBtn" data-equal="=">=</button>
+            </div>
+        </div>
+        <div class="history">
+            <button id="logBtn" class="log">Log</button>
+            <select name="list" id="list" class="list" size="8"></select>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
